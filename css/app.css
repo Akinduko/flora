@@ -1,0 +1,117 @@
+p {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background: white;
+	color: rgba(0, 0, 0, 0.8);
+	font-family: 'Arial';
+}
+
+.container {
+	width: 70%;
+	margin: 0 auto;
+	padding: 24px;
+	padding-top: 0px;
+	font-size: 14px;
+}
+
+.transcription-info {
+	font-weight: bold;
+	color: orange;
+	margin-left: 16px;
+}
+
+#toolbar {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px;
+}
+
+#upload-container {
+	display: flex;
+	align-items: center;
+}
+
+#lbl-filename {
+	margin-right: 16px;
+}
+
+#providers-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-top: 24px;
+}
+
+.provider-container {
+	width: 48%;
+	background: silver;
+	color: rgba(255, 255, 255, 0.8);
+	margin: 0 auto;
+}
+
+.provider-title {
+	font-weight: bold;
+}
+
+.transcription-text {
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.8);
+	line-height: 23px;
+	text-align: justify;
+}
+
+.provider-header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+	background: #2c666e;
+	padding: 16px;
+}
+
+#amazonStatusBtn {
+	margin-left: 16px;
+}
+
+#amazonContainer {
+	border-radius: 10px;
+}
+
+#googleContainer {
+	border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+	.provider-container {
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	#providers-container {
+		margin-top: 0px;
+	}
+
+	.container {
+		width: 100%;
+		padding: 0px;
+	}
+
+	#filler {
+		display: none;
+	}
+
+	#amazonStatusBtn {
+		margin-left: 0px;
+		margin-top: 8px;
+	}
+
+	#googleContainer {
+		margin-top: 16px;
+	}
+}
